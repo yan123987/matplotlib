@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-3, 3, 50)
+y1 = 2*x + 1
+y2 = x**2
+
+#想要画图就以plt.figure()打头
+plt.figure()
+plt.plot(x, y1)
+
+#顺序为3，长为8，宽为5
+plt.figure(num=3, figsize=(8, 5),)
+plt.plot(x, y2)
+# 颜色，宽度，样式
+plt.plot(x, y1, color='red', linewidth=1.0, linestyle='--')
+plt.show()
